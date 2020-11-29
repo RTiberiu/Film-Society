@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Common Head for Film Society -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Society Members Page1</title>
+    
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
+    <script src="JavaScript.js"></script>
+
+
+     <!-- Add style sheet for New Page-->    
+     <link rel="stylesheet" href="./css/FS_Members.css">
+
+
+  </head>
+
+  <body class="background">
+
+
+   <!-- Common Header for Film Society -->
+   <header>
+        <!-- Common Logo for Film Society -->
+        <img id='logo' src="./InvertedLogo.png" alt="logo">
+        <nav>
+          <!-- Common Nav Bar for Film Society -->
+          <div id="displayedNav">
+
+            <a href="#" id="page1">Home Page</a>
+            <a href="#" id="page2">Cinematography</a>
+            <a href="Member_1 - Login.html" id="page3">Members</a>
+            <a href="#" id="page4">Careers</a>
+            <a href="#" id="page5">About Us</a>
+            <a href="#" id="page6">Events</a>
+            <a href="#" id="page7">Contact Us</a>
+            <a href="#" id="page8">New Movies</a>
+            <a href="#" id="page9">New TV Series</a>
+
+          </div>
+          
+          <!-- Common Burger Menu for Film Society -->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+
+        <div id="hiddenNav"></div>
+    </header>
+
+    <!-- Main Page content - Add here -->  
+    <main>
+    
+         <!-- Main member Page Left side content-->  
+         <div id="MemberleftSection">
+          <h2>MEMBER'S LOGIN</h2><br>
+          <h3>Movie Club Members</h3> <br>
+          <p>If you have an account, sign in with your email address</p> <br>
+            
+          <!-- Ask Member for login details --> 
+          <fieldset id = "DLogin">
+          <form>
+            <label for="email">Email*</label> <br> 
+            <input type="text" id="email" name="email" placeholder="Your Email..."> <br> <br>
+            <label for="password">Password*</label> <br> 
+            <input type="password" id="password" name="password" placeholder="Your Password..."> <br> <br> 
+            <!-- Add Robot check later 
+            <input type="submit" value="SIGN IN"> 
+           May be Validation can be added here-->
+    
+          <a href="Member_4 - Movie Landing Page.html" class="createbutton">SIGN IN</a>  
+         </form>
+         </fieldset>
+        
+        </div>
+        
+        <!-- Main member Page Right side content-->  
+        <div id="MembersrightSideM1">
+          
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <h3>Join Film Society</h3> <br>
+          <p>Club members receive more. Unlock more exclusive benefits when you join our club.</p> <br>
+          <p>* Exclusive access to new movie releases </p> <br>
+          <p>* Wide Selection of movies</p> <br>
+          <p>* Invites to member exclusive events</p> <br>
+          <p>* Get a treat on your birthday</p> <br>
+          <p>* Enjoy faster checkout</p> <br>
+          <a href="Member_2 - Create Account.html" class="createbutton">CREATE ACCOUNT</a> 
+        </div>
+            
+    
+    </main>
+
+
+    <!-- Common Footer for Film Society -->
+    <footer>
+         <i class="fas fa-angle-up"></i>
+         <div id="divider"></div>
+         <div id="socialMedia">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+         </div>
+    </footer>
+
+  </body>
+</html>
