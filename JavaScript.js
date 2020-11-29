@@ -5,7 +5,7 @@ $(document).ready(function () {
       $('body').show();
       console.log(window.location.href);
       // Add index.html at the end of the URL
-      if (window.location.href === 'https://filmsociety-rgu.netlify.app') {
+      if (window.location.href === 'https://filmsociety-rgu.netlify.app/') {
          window.location = 'https://filmsociety-rgu.netlify.app/index.html';
       };
 
