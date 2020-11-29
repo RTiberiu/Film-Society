@@ -6,7 +6,7 @@ $(document).ready(function () {
       console.log(window.location.href);
       // Add index.html at the end of the URL
       if (window.location.href === 'https://rgu-filmsociety.netlify.app/') {
-         window.location = 'https://filmsociety-rgu.netlify.app/index.html';
+         window.location = 'https://rgu-filmsociety.netlify.app/index.html';
       };
 
       // get the vw & vh used in css, in js
