@@ -1020,3 +1020,543 @@ footer .fas {
 }
 
 /* THE ENDING OF TIBERIU ROCIU'S CODE */
+
+/* Piotr's CSS starts here */
+/* Beginning of 'Contact Us' CSS */
+
+
+
+
+.Pbody {
+   background-color: rgba(22, 22, 22, 1);
+}
+
+
+#PHeader {
+   display: grid;
+}
+
+.Pmain {
+   width: 100%;
+   color: rgb(213, 213, 213);
+   cursor: default;
+}
+
+.Pmain p {
+   font-size: 3vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+   font-family: 'Bebas Neue', 'Serif';
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 1.5vw;
+   text-align: center;
+   width: 70%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+.Pbody input {
+   width: 100%;
+   background-color: lightgrey;
+}
+
+.Pheader1, .Pheader2 {
+   font-family: 'Bebas Neue', 'Serif';
+   display: block;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7vh;
+   font-weight: bolder;
+}
+
+.Pheader1 {
+   font-size: 7vh;
+}
+
+.Pheader2 {
+   font-size: 5vh;
+}
+
+
+.PmediumHr {
+   width: 60%;
+   border: 0.1vh solid silver;
+   background-color: silver;
+   margin-bottom: 6vh;    
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .PinvisibleHr {
+   width: 60%; 
+   border: solid 0.1vh rgba(22, 22, 22, 1);
+}
+
+.PbigHr {
+   width: 90%;
+   border: 0.1vh solid;
+   color: silver;
+   margin-top: 3vh;
+   background-color: silver;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+#PfirstParagraph p {
+   margin-bottom: 8vh;
+}
+
+
+#PfillOut {
+   height: 50vh;
+
+}
+
+
+#Pquestionnaire {
+   background-color: slategray;
+   height: 90%;
+   width: 35%;
+   margin-right: 5vw;
+   margin-left: 5vw;
+   float: left;
+   border: solid rgb(213, 213, 213) 0.4vw;
+   border-radius: 2vw;
+   padding: 1.5vw;
+   padding-left: 2.5vw;
+   padding-right: 2.5vw;
+}
+
+#myForm {
+   height: 100%;
+}
+
+
+#myForm > div {
+}
+
+
+#Penquiry {
+   background-color: slategray;
+   height: 100%;
+   width: 40%;
+   margin-right: 5vw;
+   margin-left: 2vw;
+   position: relative;
+   float: right;
+   border: solid rgb(213, 213, 213) 0.4vw;
+   border-radius: 2vw;
+   padding: 1.5vw;
+   padding-left: 2.5vw;
+   padding-right: 2.5vw;
+}
+
+#PenquiryLabel {
+   position: relative;
+   text-align: center;
+   display: block;
+}
+
+.Palabel {
+   display: block;
+   margin: 0px;
+   padding: 0px;
+   font-size: 3vh;
+}
+
+
+.Pinput {
+   display: block;
+   padding: 0.25vw;
+   background-color: lightgrey;
+   margin-top: 0.5vw;
+   margin-bottom: 0.5vw;
+   border-radius: 0.4vw;
+   border: solid black 0.2vw;
+}
+
+
+
+#PemailDiv {
+   margin-bottom: 2vh;
+}
+
+#PemailIn {
+   background-color: lightgray;
+   width: 90%;
+   height: 5vh;
+   font-size: 3vh;
+   display: block;
+}
+
+#PnameDiv {
+   margin-bottom: 4vh;
+}
+
+#PnameIn {
+   background-color: lightgray;
+   width: 90%;
+   height: 5vh;
+   font-size: 3vh;
+}
+
+#PtopicDiv {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-between;
+}
+
+#Ptopic {
+   display: block;
+   width: 70%;
+   float: right;
+   margin-right: 10%;
+   padding: 0.3vw;
+   padding-left: 1vw;
+   border-radius: 0.5vw;
+   border: solid black 0.2vw;
+   cursor: pointer;
+   font-size: 2vh;
+}
+
+#PtopicLabel {
+   display: block;
+   position: relative;
+   top: 1vh;
+   }
+
+#Ptopic:hover {
+   background-color:rgba(22, 22, 22, 1);
+   color:rgb(213, 213, 213);
+   border-color: rgb(213, 213, 213);
+}
+
+#PenquiryIn {
+   width: 35vw;
+   height: 35vh;
+   resize: none;
+   font-size: 3vh;
+}
+
+#PsubmitButton {
+   background-color: lightgray;
+   padding-top: 0.5vh;
+   padding-bottom: 0.5vh;
+   width: 7vw;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+   display: block;
+   border-radius: 1vw;
+   border: solid rgb(56, 56, 56) 0.2vw;
+   font-size: 2vh;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#PsubmitButton:hover {
+   background-color:rgba(22, 22, 22, 1);
+   color:rgb(213, 213, 213);
+   border-color: rgb(213, 213, 213);
+}
+
+#PCdetailsSection {
+   margin-top: 25vh;
+   display: flex;
+   flex-direction: row;
+}
+
+#PCphonePic {
+   width: 50%;
+   height: 50vh;
+}
+
+#PCphonePic img{
+width: 100%;
+height: 100%;
+}
+
+#Pcontactdetails, #Pcontactdetails p {
+   text-align: left;
+}
+
+.Psubheader {
+   display: block;
+   margin-bottom: 0.8vh;
+}
+
+.PleftParagraph {
+   width: 50%;
+   text-align: center;
+   margin-bottom: 18vh;
+   font-size: 3vh;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+#Pfb-plug {
+   margin-top: 4vh;
+   width: 70%;
+   height: 20vh;
+   overflow: hidden;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.fb-page {
+
+}
+
+#PsMediaDiv {
+   display: flex;
+   flex-direction: row;
+   margin-top: 7vh;
+   justify-content: center;
+}
+
+.PsMediaIcon {
+   margin-left: 1vh;
+   margin-right: 1vh;
+   width: 9vh;
+   height: 9vh;
+}
+
+.PsMediaIcon:hover {
+   transform: scale(1.5);
+}
+
+#PaddressAndMap {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+#PBiggerMap {
+   width:40vw;
+   height: 60vh;
+   margin-right: 5vw;
+   border: solid rgba(146, 159, 172, 0.534) 1.3vh;
+   border-radius: 3vh; 
+   background-color: cadetblue;
+   overflow: hidden;
+}
+
+#Pmap {
+   position: relative;
+   float: right;
+   background-color:lightblue;
+   width: 100%;
+   height: 100%;
+}
+
+#Paddress {
+}
+
+#Paddress .Pheader2{
+   margin-top: 0px;
+}
+
+#Paddress p {
+   font-size: 3vh;
+}
+/* End of contact_us CSS */
+
+
+/*  Events CSS below  */
+
+#PEventsTable {
+   width: 100%;
+   height: 60vh;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   background-color: slategray;
+}
+   
+#PEventsTable a:link, #PEventsTable a:visited {
+   text-decoration: none;
+   font-weight: 700;
+   color: inherit;
+}
+   
+#PEventsTable a:hover {
+   color: rgb(213, 213, 213);
+   padding: 5%;
+   background-color: rgba(22, 22, 22, 1);
+   border-radius: 0.6vh;  
+}
+
+
+.Pbody table, th, td {
+   border: silver solid 0.7vh;
+   border-collapse: collapse;
+   font-size: 3vh;
+}
+   
+   #PTableFrame {
+   background-color: silver;
+   border: silver solid 0.8vh;
+   border-radius: 3vh;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+}   
+ 
+#PeventsFlex {
+   margin-top: 15vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   
+}
+
+#PEvents {
+   text-align: center;
+}   
+.PEventhr {
+   width: 40%;
+   border: 0.1vh solid silver;
+   background-color: silver;
+   margin-bottom: 0.4vh; 
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.PEvent p {
+   margin-bottom: 15vh;
+   width: 70%;
+   margin-right: auto;
+   margin-left: auto;
+}
+   
+#PEventsP1 {
+   margin-bottom: 15vh;
+   flex-basis:50%;
+
+}
+
+.PEflexImages {
+   height: 33%;
+   text-align: center;
+}
+
+#Pflex1, #Pflex3 {
+   flex-basis:25%;
+   height: 70vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Bebas Neue', 'Serif';
+   font-weight: bolder;
+}
+
+
+#PEimage1 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+
+#PEimage1:hover img {
+   opacity: 0.25;
+}
+
+#PEimage1:hover div {
+   display: block;
+}
+
+#PEimage2 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+   
+#PEimage2:hover img {
+   opacity: 0.25;
+}
+   
+#PEimage2:hover div {
+   display: block;
+}
+
+#PEimage3 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+   
+#PEimage3:hover img {
+   opacity: 0.25;
+}
+   
+#PEimage3:hover div {
+   display: block;
+}
+
+#PEimage4 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+
+#PEimage4:hover img {
+   opacity: 0.25;
+}
+
+#PEimage4:hover div {
+   display: block;
+}
+
+#PEimage5 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+   
+#PEimage5:hover img {
+   opacity: 0.25;
+}
+   
+#PEimage5:hover div {
+   display: block;
+}
+
+#PEimage6 div {
+   display: none;
+   position: relative;
+   bottom: 60%;
+   font-size: 4vh;
+}
+   
+#PEimage6:hover img {
+   opacity: 0.25;
+}
+   
+#PEimage6:hover div {
+   display: block;
+}
+   
+#PEinput1 {
+   margin-left: 20%;
+}
+   
+#PEinput1 input {
+   width: 3vh;
+   height: 3vh;
+}
+   
+#PEwindow1 {
+   text-align: left;
+}
+
+/* End of Events CSS */
+/* End of Piotr's CSS */
