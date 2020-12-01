@@ -14,25 +14,31 @@
      <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
     <script>
-      let eventsEmail = "";
-      let eventsInterested = "";
-      let pmyCheck = document.getElementById("PEcheckbox1").value;
+      let PEeventsInterested = "";
+      onclick="submitEventsForm()";
 
       function submitEventsForm() {
-        eventsEmail = document.getElementById("PeventsFormInput").value;
-      
-      /*  if (pmyCheck.checked) {
-          eventsInterested = "1";
-        } else {
-          eventsInterested = "0";
+        let PEemail = document.getElementById("PeventsFormInput").value;
+        let PEcheckboxes = document.getElementsByName("checkEvent1");
+        let PEcounter = 0;
+
+        for(let PEcheckbox of PEcheckboxes) {
+          if (PEcheckbox.checked) {
+            PEeventsInterested += PEcheckbox.value + ", ";
+            PEcounter++;
+          }
         }
 
-        */
-        alert(eventsEmail + "\n" + pmyCheck);
-      
+        if(PEemail.length == 0) {
+          alert("Please enter your e-mail address");
+        } else {
+          if(PEcounter == 0) {
+            alert("Please check the event-boxes of the events that you are interested in attending");
+          } else {
+            alert("You are interested in " + PEcounter + " event(s)\n\nWe have sent you an invitation e-mail to the following events: \n" + PEeventsInterested);
+          }
+        }
       }
-
-
     </script>
 
   </head>
@@ -41,7 +47,6 @@
         <img id='logo' src="./InvertedLogo.png" alt="logo">
         <nav>
           <div id="displayedNav">
-           
             <a href="./index.html" id="page1">Home Page</a>
             <a href="./cinematography.html" id="page2">Cinematography</a>                       
             <a href="./Member_1 - Login.html" id="page3">Members</a>
@@ -97,7 +102,7 @@
               <td>05.12.2020</td>
               <td id="PEwindow1"> 
                 <span id="PEinput1">
-                  <input type="checkbox" id="PEcheckbox1" name="checkEvent1"> 
+                  <input type="checkbox" id="PEcheckbox1" name="checkEvent1" value="Film Talks 05.12.2020"> 
                   <label for="checkEvent1"> Yes </label>
                 </span>
                 </td>
@@ -110,7 +115,7 @@
               <td>12.12.2020</td>
               <td id="PEwindow1"> 
                 <span id="PEinput1">
-                  <input type="checkbox" name="checkEvent1"> 
+                  <input type="checkbox" id="PEcheckbox2" name="checkEvent1" value="Body language in acting"> 
                   <label for="checkEvent1"> Yes </label>
                 </span>
                 </td>
@@ -123,7 +128,7 @@
               <td>19.12.2020</td>
               <td id="PEwindow1"> 
                 <span id="PEinput1">
-                  <input type="checkbox" name="checkEvent1"> 
+                  <input type="checkbox" name="checkEvent1" value="Film Talks 19.12.2020"> 
                   <label for="checkEvent1"> Yes </label>
                 </span>
                 </td>
@@ -134,7 +139,7 @@
               <td>21.12.2020</td>
               <td id="PEwindow1"> 
                 <span id="PEinput1">
-                  <input type="checkbox" name="checkEvent1"> 
+                  <input type="checkbox" name="checkEvent1" value="Meeting Danny Boyle"> 
                   <label for="checkEvent1"> Yes </label>
                 </span>
                 </td>
