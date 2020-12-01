@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Society Members Page1</title>
     
+    <link rel="stylesheet" href="css.css">
+
     
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
-
-
-     <!-- Add style sheet for New Page-->    
-     <link rel="stylesheet" href="./css/FS_Members.css">
-
 
   </head>
 
@@ -33,15 +30,16 @@
           <!-- Common Nav Bar for Film Society -->
           <div id="displayedNav">
 
-            <a href="#" id="page1">Home Page</a>
-            <a href="#" id="page2">Cinematography</a>
-            <a href="Member_1 - Login.html" id="page3">Members</a>
-            <a href="#" id="page4">Careers</a>
-            <a href="#" id="page5">About Us</a>
-            <a href="#" id="page6">Events</a>
-            <a href="#" id="page7">Contact Us</a>
-            <a href="#" id="page8">New Movies</a>
-            <a href="#" id="page9">New TV Series</a>
+            <a href="./index.html" id="page1">Home Page</a>
+            <a href="./cinematography.html" id="page2">Cinematography</a>                       
+            <a href="./Member_1 - Login.html" id="page3">Members</a>
+            <a href="./contact_us.html" id="page4">Contact us</a>
+            <a href="./events.html" id="page5">Events</a> 
+            <a href="#" id="page6">Test6</a>
+            <a href="#" id="page7">Test7</a>
+            <a href="#" id="page8">Test8</a>
+            <a href="#" id="page9">Test9</a>
+            <a href="#" id="page10">Test10</a>
 
           </div>
           
@@ -56,27 +54,23 @@
         <div id="hiddenNav"></div>
     </header>
 
-    <!-- Main Page content - Add here -->  
-    <main>
+    <!-- Main Page content - Darsh Member Page 1-->  
+    <main class="DNmain">
     
          <!-- Main member Page Left side content-->  
-         <div id="MemberleftSection">
+         <div id="MemberleftSectionM1">
           <h2>MEMBER'S LOGIN</h2><br>
           <h3>Movie Club Members</h3> <br>
           <p>If you have an account, sign in with your email address</p> <br>
             
           <!-- Ask Member for login details --> 
-          <fieldset id = "DLogin">
+          <fieldset id = "DNLogin">
           <form>
-            <label for="email">Email*</label> <br> 
-            <input type="text" id="email" name="email" placeholder="Your Email..."> <br> <br>
-            <label for="password">Password*</label> <br> 
-            <input type="password" id="password" name="password" placeholder="Your Password..."> <br> <br> 
-            <!-- Add Robot check later 
-            <input type="submit" value="SIGN IN"> 
-           May be Validation can be added here-->
-    
-          <a href="Member_4 - Movie Landing Page.html" class="createbutton">SIGN IN</a>  
+            <label class="DNlabel" for="email">Email*</label> <br> 
+            <input class="DNinput" type="text" id="email" name="email" placeholder="Your Email..."> <br> <br>
+            <label class="DNlabel"for="password">Password*</label> <br> 
+            <input class="DNinput" type="password" id="password" name="password" placeholder="Your Password..."> <br> <br> 
+            <a href="./Member_4 - Movie Landing Page.html" class="DNbutton">SIGN IN</a>  
          </form>
          </fieldset>
         
@@ -84,9 +78,10 @@
         
         <!-- Main member Page Right side content-->  
         <div id="MembersrightSideM1">
+          <!-- Promo Video-->  
+          <iframe width="680" height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
+          <!--Create Button for New members with benefits for Joining-->  
           <h3>Join Film Society</h3> <br>
           <p>Club members receive more. Unlock more exclusive benefits when you join our club.</p> <br>
           <p>* Exclusive access to new movie releases </p> <br>
@@ -94,24 +89,31 @@
           <p>* Invites to member exclusive events</p> <br>
           <p>* Get a treat on your birthday</p> <br>
           <p>* Enjoy faster checkout</p> <br>
-          <a href="Member_2 - Create Account.html" class="createbutton">CREATE ACCOUNT</a> 
+          <a href="./Member_2 - Create Account.html" class="DNbutton">CREATE ACCOUNT</a> 
         </div>
-            
-    
+                
     </main>
 
 
     <!-- Common Footer for Film Society -->
     <footer>
-         <i class="fas fa-angle-up"></i>
-         <div id="divider"></div>
-         <div id="socialMedia">
+      <i class="fas fa-angle-up"></i>
+      <div id="divider"></div>
+      <div id="socialMedia">
+         <a href="https://www.facebook.com/" target="_blank">
             <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="https://www.twitter.com/" target="_blank">
             <i class="fab fa-twitter"></i>
+         </a>
+         <a href="https://www.linkedin.com/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
+         </a>
+         <a href="https://www.instagram.com/" target="_blank">
             <i class="fab fa-instagram"></i>
-         </div>
-    </footer>
+         </a>
+      </div>
+   </footer>
 
   </body>
 </html>
