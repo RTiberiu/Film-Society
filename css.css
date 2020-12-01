@@ -1972,7 +1972,7 @@ m4main {
    font-weight: bold;
  }
  
-  p { 
+ .DNmain p { 
    color: rgb(213, 213, 213);  
    font-family: 'Bebas Neue', 'Serif';
    font-size: 2vh;
