@@ -13,37 +13,10 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
-    <script>
-      let PEeventsInterested = "";
-      onclick="submitEventsForm()";
-
-      function submitEventsForm() {
-        let PEemail = document.getElementById("PeventsFormInput").value;
-        let PEcheckboxes = document.getElementsByName("checkEvent1");
-        let PEcounter = 0;
-
-        for(let PEcheckbox of PEcheckboxes) {
-          if (PEcheckbox.checked) {
-            PEeventsInterested += PEcheckbox.value + ", ";
-            PEcounter++;
-          }
-        }
-
-        if(PEemail.length == 0) {
-          alert("Please enter your e-mail address");
-        } else {
-          if(PEcounter == 0) {
-            alert("Please check the event-boxes of the events that you are interested in attending");
-          } else {
-            alert("You are interested in " + PEcounter + " event(s)\n\nWe have sent you an invitation e-mail to the following events: \n" + PEeventsInterested);
-          }
-        }
-      }
-    </script>
 
   </head>
   <body class="Pbody">
-      <header id="PHeader">
+    <header id="PHeader">
         <img id='logo' src="./InvertedLogo.png" alt="logo">
         <nav>
           <div id="displayedNav">
@@ -66,73 +39,73 @@
           </div>
         </nav>
         <div id="hiddenNav"></div>
-      </header>
-
-      <main class="Pmain">
-        <div id="PfirstParagraph">
-          <h1 class="Pheader1";> Events  </h1> 
-          <hr class="PmediumHr">
-          <p>
-            Events are a vital part of our community. Without them, there would be no Film Society.<br> We are here for many different reasons and this variety is also reflected in the events we organise:<br>
-            We watch movies, we discuss them, we meet famous people and learn form them, we organise workshops, and finally we put those skills into practice and we create movies.
-          </p>
-          <p>
+    </header>
+    <!-- Because of the fact that different people contribute to the project, using a single CSS file,
+    we decided to use unique class and id names for all our elements in order to make sure that our style does not interfere with
+  the style of other contributors. My id and class names will start with 'P'-->
+    <main class="Pmain">
+      <div id="PfirstParagraph">
+        <h1 class="Pheader1";> Events  </h1> 
+        <hr class="PmediumHr">
+        <p>
+          Events are a vital part of our community. Without them, there would be no Film Society.<br> We are here for many different reasons and this variety is also reflected in the events we organise:<br>
+          We watch movies, we discuss them, we meet famous people and learn form them, we organise workshops, and finally we put those skills into practice and we create movies.
+        </p>
+        <p>
             Everyone can choose what area of activity is the most appealing to him.<br>
             However, despite those differences, there is one thing that is common for all of us and brings us all here,<br> it's the love for good cinematography.
-          </p>
-          <p>
-            Below you will find all the current events we organise and their descriptions
-          </p>
-
-       </div>
-
+        </p>
+        <p>
+           Below you will find all the current events we organise and their descriptions
+        </p>
+      </div>
       <div id="PTableFrame">
         <table id="PEventsTable">
-            <tr>
-              <th>Event</th>
-              <th>Location</th> 
-              <th>Date</th>
-              <th> Interested?</th>
-            </tr>
-            <tr>
-              <td>
-              <a href="#PEvent1"> Film Talks</a>  
-              </td>
-              <td>Our Lounge</td>
-              <td>05.12.2020</td>
-              <td id="PEwindow1"> 
-                <span id="PEinput1">
-                  <input type="checkbox" id="PEcheckbox1" name="checkEvent1" value="Film Talks 05.12.2020"> 
-                  <label for="checkEvent1"> Yes </label>
-                </span>
-                </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#PEvent2"> Body language in acting</a> 
-              </td>
-              <td>Aberdeen Arts Centre</td>
-              <td>12.12.2020</td>
-              <td id="PEwindow1"> 
-                <span id="PEinput1">
-                  <input type="checkbox" id="PEcheckbox2" name="checkEvent1" value="Body language in acting"> 
-                  <label for="checkEvent1"> Yes </label>
-                </span>
-                </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#PEvent3"> Film Talks</a> 
-              </td>
-              <td>Our Lounge</td>
-              <td>19.12.2020</td>
-              <td id="PEwindow1"> 
-                <span id="PEinput1">
-                  <input type="checkbox" name="checkEvent1" value="Film Talks 19.12.2020"> 
-                  <label for="checkEvent1"> Yes </label>
-                </span>
-                </td>
-            </tr>
+          <tr>
+            <th>Event</th>
+            <th>Location</th> 
+            <th>Date</th>
+            <th> Interested?</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="#PEvent1"> Film Talks</a>  <!-- Links in the events' names leading to the descriptions further down the page-->
+            </td>
+            <td>Our Lounge</td>
+            <td>05.12.2020</td>
+            <td id="PEwindow1"> 
+              <span id="PEinput1"> <!-- Checkbox to mark interest in the event-->
+                <input type="checkbox" id="PEcheckbox1" name="checkEvent1" value="Film Talks 05.12.2020"> 
+                <label for="checkEvent1"> Yes </label>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#PEvent2"> Body language in acting</a> 
+            </td>
+            <td>Aberdeen Arts Centre</td>
+            <td>12.12.2020</td>
+            <td id="PEwindow1"> 
+              <span id="PEinput1">
+                <input type="checkbox" id="PEcheckbox2" name="checkEvent1" value="Body language in acting"> 
+                <label for="checkEvent1"> Yes </label>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#PEvent3"> Film Talks</a> 
+            </td>
+            <td>Our Lounge</td>
+            <td>19.12.2020</td>
+            <td id="PEwindow1"> 
+              <span id="PEinput1">
+                <input type="checkbox" name="checkEvent1" value="Film Talks 19.12.2020"> 
+                <label for="checkEvent1"> Yes </label>
+              </span>
+            </td>
+          </tr>
             <tr>
               <td><a href="#PEvent4"> Meeting Danny Boyle </a> </td>
               <td>The Lemon Tree</td>
@@ -142,9 +115,9 @@
                   <input type="checkbox" name="checkEvent1" value="Meeting Danny Boyle"> 
                   <label for="checkEvent1"> Yes </label>
                 </span>
-                </td>
+              </td>
             </tr>
-          </table>
+        </table>
       </div>
       <hr class="PinvisibleHr">
       <div id="PpreEventsForm">
@@ -153,15 +126,17 @@
           You will also be updated on any changes to the event.
         </p>
       </div>
-      <div id="PeventsForm">
+      <div id="PeventsForm">  <!-- a form to show interest n the events. If the form is completed (input e-mail address and checkboxes checked),
+      the page will alert a relevant message. If it's not complete,, the page will also alert the user after clicking the 'submit' button-->
         <fieldset>
           <label id="PeventsFormLabel" for = "PeventsFormInput"> Your e-mail address: </label>
           <input id="PeventsFormInput" name="email address" type="text">
         </fieldset>
         <button id="PeventsSubmit" type="button" onclick="submitEventsForm()">submit</button>
       </div>
-      <div id="PeventsFlex">
-          <div id="Pflex1">
+      <div id="PeventsFlex"> <!-- Part of the page consisting of 3 sections : image galleries on the sides and text between them-->
+        
+          <div id="Pflex1"><!--- A section with images on the left hand side. If you hover over the images, a text will appear-->
             <div id="PEimage1" class="PEflexImages">
               <img src="./Pictures/events/image1.jpg" width="100%" height="100%">
               <div>
@@ -181,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div id="PEventsP1">
+          <div id="PEventsP1"> <!-- A middle section, between the image galleries, with the text in it-->
               <h2 class="Pheader2">
               What's going on
               </h2>
@@ -192,9 +167,8 @@
               <p>
                   Many of our events, however, are held outside of our office and mostly require a ticket. You can purchase it through our website.       
               </p>
-
           </div>
-          <div id="Pflex3">
+          <div id="Pflex3"> <!-- image gallery section on the right hand side-->
             <div id="PEimage4" class="PEflexImages">
               <img src="./Pictures/events/image4.jpg" width="100%" height="100%">
               <div>
@@ -213,15 +187,12 @@
                 FRIENDSHIP
               </div>
             </div>
-
           </div>
       </div>
       <h1 class="Pheader1";> What to expect  </h1>
       <hr class="PmediumHr">
       <hr class="PinvisibleHr">
-
-      <div id="PEvents">
-        
+      <div id="PEvents"> <!-- A section with the events descriptions-->
         <div class="PEvent">
             <h2>
                 <a class="Pheader2" id="PEvent1"> 
@@ -241,7 +212,6 @@
               To find our office, please visit the "Contact us" page.
             </p>
         </div>
-
         <div class="PEvent">
             <h2>
               <a class="Pheader2" id="PEvent2"> 
@@ -256,11 +226,8 @@
             <p>
               The workshops are held from 11 a.m. to 4 p.m. with a lunch break at 1 pm. You will be able to buy food and refreshments on-site.
               The participants will actively practice using body language in relevant contexts and will be supervised by Emil. The number of participants is limited to 50 and the registration for this event may close soon.
-
-
             </p>
         </div>
-
         <div  class="PEvent">
           <h2>
             <a class="Pheader2" id="PEvent3"> 
@@ -268,19 +235,17 @@
             </a>
           </h2>
           <hr class="PEventhr">
-          <p> "The Film of the Year 2020"
-              In our last Film Talks meeting in 2020 will pick our Film of the Year, as we do annually.<br>
-              Each participant will propose a title, after which we will have a discussion and vote.<br>
-              Film of the Year 2019: "Pain and Glory"
+          <p> 
+            "The Film of the Year 2020"
+            In our last Film Talks meeting in 2020 will pick our Film of the Year, as we do annually.<br>
+            Each participant will propose a title, after which we will have a discussion and vote.<br>
+            Film of the Year 2019: "Pain and Glory"
           </p>
           <p>
             "Film Talks" are held from 4p.m. to 6p.m. in the lounge at our office.<br>
             To find our office, please visit the "Contact us" page.
           </p>
-
-          </p>
         </div>
-
         <div class="PEvent">
           <h2>
             <a class="Pheader2" id="PEvent4"> 
@@ -295,12 +260,10 @@
           <p>
               The event is held at "The Lemon Tree" in Aberdeen on 21.12.2020 from 6p.m. to 9p.m. There will be a thirty-minute brake at 7:30. Food and drinks available at the bar. 
           </p>
-            </div>
-
-        </div> 
+        </div>
+      </div> 
         <hr class="PinvisibleHr" id="specialhr1">
       </main>
-
       <footer>
          <i class="fas fa-angle-up"></i>
          <div id="divider"></div>
