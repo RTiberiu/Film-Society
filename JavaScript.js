@@ -919,4 +919,56 @@ $(document).ready(function () {
 
    });
 
-}); // end JS code
+});
+
+
+/* Here starts Piotr's Javascript code: */
+/* JS for the "Contact us" page: */ 
+
+let PtheName = "";
+let PtheEmail = "";
+let PtheEnquiry = "";
+
+function PsubmitForm() {
+   PtheName = document.forms["imForm1"]["name"].value;
+   PtheEmail = document.forms["imForm1"]["email"].value;
+   PtheEnquiry = document.forms["imForm2"]["enquiry"].value;
+   
+   if (PtheEmail === "" || PtheName === "" || PtheEnquiry === "") {
+       alert("Your enquiry form is incomplete\nCannot submit the enquiry");
+   } else {
+       alert("Thank you form submitting your enquiry " + PtheName)
+   } 
+}
+
+/* End of JS for "Contact us" */
+
+/* JS for the "events" page: */
+
+let PEeventsInterested = "";
+
+function submitEventsForm() {
+   let PEemail = document.getElementById("PeventsFormInput").value;
+   let PEcheckboxes = document.getElementsByName("checkEvent1");
+   let PEcounter = 0;
+
+   for(let PEcheckbox of PEcheckboxes) {
+      if (PEcheckbox.checked) {
+         PEeventsInterested += PEcheckbox.value + ", ";
+         PEcounter++;
+      }
+   }
+
+   if(PEemail.length == 0) {
+      alert("Please enter your e-mail address");
+   } else {
+      if(PEcounter == 0) {
+         alert("Please check the event-boxes of the events that you are interested in attending");
+      } else {
+         alert("You are interested in " + PEcounter + " event(s)\n\nWe have sent you an invitation e-mail to the following events: \n" + PEeventsInterested);
+      }
+   }
+}
+
+/* End of JS for "events" */
+/* End of Piotr's Javascript code */ 
