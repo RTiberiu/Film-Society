@@ -14,23 +14,6 @@
      <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
 
-    <script> 
-         let theName = "";
-         let theEmail = "";
-         let theEnquiry = "";
-    
-        function submitForm() {
-            theName = document.forms["imForm1"]["name"].value;
-            theEmail = document.forms["imForm1"]["email"].value;
-            theEnquiry = document.forms["imForm2"]["enquiry"].value;
-            if (theEmail === "" || theName === "" || theEnquiry === "") {
-                alert("Your enquiry form is incomplete\nCannot submit the enquiry");
-            } else {
-                alert("Thank you form submitting your enquiry " + theName)
-            } 
-        }
-    </script>
-
     <div id="fb-root">
     </div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="1Scv57gW">
@@ -39,11 +22,10 @@
   </head>
   <body class="Pbody">
     <header id="PHeader">
-        <img id='logo' src="./InvertedLogo.png" alt="logo">
-        <nav>
-          <div id="displayedNav">
-           
-            <a href="./index.html" id="page1">Home Page</a>
+      <img id='logo' src="./InvertedLogo.png" alt="logo">
+      <nav>
+        <div id="displayedNav">
+          <a href="./index.html" id="page1">Home Page</a>
             <a href="./cinematography.html" id="page2">Cinematography</a>                       
             <a href="./Member_1 - Login.html" id="page3">Members</a>
             <a href="./contact_us.html" id="page4">Contact us</a>
@@ -53,153 +35,146 @@
             <a href="#" id="page8">Test8</a>
             <a href="#" id="page9">Test9</a>
             <a href="#" id="page10">Test10</a>
-          </div>
-
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        </nav>
-        <div id="hiddenNav"></div>
-      </header>
-      <main class="Pmain">
-        <div id="PfirstParagraph">
-          <h1 class="Pheader1";> Contact us  </h1> 
-          <hr class="PmediumHr">
-          <p>
-              Want to join one of our events?<br> Or maybe you would like to give it a go and start your adventure as an up-and-coming actor?
-              <br>Whatever you would like to find out about, we'll be happy to help<br> 
-              Just complete the form below or contact us via e-mail<br> It's as simple as that
-          </p>
-
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div id="hiddenNav"></div>
+    </header>
+    <main class="Pmain">  <!-- Because of the fact that different people contribute to the project, using a single CSS file,
+    we decided to use unique class and id names for all our elements in order to make sure that our style does not interfere with
+  the style of other contributors. My id and class names will start with 'P'-->
+      <div id="PfirstParagraph">
+        <h1 class="Pheader1";> Contact us  </h1> 
+        <hr class="PmediumHr">
+        <p>
+          Want to join one of our events?<br> Or maybe you would like to give it a go and start your adventure as an up-and-coming actor?
+          <br>Whatever you would like to find out about, we'll be happy to help<br> 
+          Just complete the form below or contact us via e-mail<br> It's as simple as that
+        </p>
       </div>
-
-      <div id="PfillOut">
-          <fieldset id = "Pquestionnaire">
-              <form id="myForm" name="imForm1" >
-                    <div id="PemailDiv">
-                        <label class="Palabel" for = "PemailIn"> Your e-mail address: </label>
-                        <input class="Pinput" id="PemailIn" type="text" name = "email" >
-                    </div>
-                    <div id="PnameDiv">
-                        <label class="Palabel" for = "PnameIn"> Your name: </label>
-                        <input class="Pinput" id="PnameIn" type="text" name = "name" >
-                    </div>
-                    <hr class="PmediumHr" style="margin-bottom: 4vh;">
-                    <div id="PtopicDiv">
-                        <label class="Palabel" id="PtopicLabel" for="Ptopic">Topic: </label>
-                        <select class="Pinput" id="Ptopic" name="topic">
-                            <option value="join">I want to join the society</option>
-                            <option value="event">enquire about event</option>
-                            <option value="other">other</option>
-                        </select>
-                    </div>
-              </form>
-          </fieldset>
-           
-            <fieldset id="Penquiry">
-                  <form id="myForm2" name="imForm2">
-                          <label class="Palabel" id="PenquiryLabel" for = "PenquiryIn"> Enquiry </label>
-                          <textarea class="Pinput" id="PenquiryIn" name = "enquiry"   ></textarea>
-                          <input id="PsubmitButton" onclick="submitForm()" type = "submit" name = "Submit"/>
-                  </form>
-            </fieldset>
+      <div id="PfillOut"> <!-- The whole Form, which is then split into two section: Name and address and enquiry -->
+        <fieldset id = "PnameAndAddress"> <!-- Name and address section of the form, displayed as a separate form-->
+          <form id="myForm" name="imForm1" > 
+            <div id="PemailDiv">
+              <label class="Palabel" for = "PemailIn"> Your e-mail address: </label>
+              <input class="Pinput" id="PemailIn" type="text" name = "email" >
+            </div>
+            <div id="PnameDiv">
+              <label class="Palabel" for = "PnameIn"> Your name: </label>
+              <input class="Pinput" id="PnameIn" type="text" name = "name" >
+            </div>
+              <hr class="PmediumHr" style="margin-bottom: 4vh;">
+            <div id="PtopicDiv">
+              <label class="Palabel" id="PtopicLabel" for="Ptopic">Topic: </label>
+              <select class="Pinput" id="Ptopic" name="topic">
+                <option value="join">I want to join the society</option>
+                <option value="event">enquire about event</option>
+                <option value="other">other</option>
+              </select>
+            </div>
+          </form>
+        </fieldset>
+        <fieldset id="Penquiry">  <!-- The 'Enquiry' section of the form, displayed as a separate form -->
+          <form id="myForm2" name="imForm2">
+            <label class="Palabel" id="PenquiryLabel" for = "PenquiryIn"> Enquiry </label>
+            <textarea class="Pinput" id="PenquiryIn" name = "enquiry"   ></textarea>
+            <input id="PsubmitButton" onclick="PsubmitForm()" type = "submit" name = "Submit"/>
+            <!-- Submit button submits the form. If the form is incomplete, the page will alert an error. If it is complete, the page will display an
+            appropriate alert-->
+          </form>
+        </fieldset>
       </div>
-    
       <hr class="PinvisibleHr">
-        <div id="PCdetailsSection">
-          <div class="PleftParagraph" id="Pcontactdetails">
-              <h2 class="Pheader2">
-              Our contact details:
-              </h2>
-              <p>
-                <span class = Psubheader>
-                  <b>General enquiries:</b>
-                </span>
-                  <b>Email:</b> myEmail@myDomain.com<br><b>Phone nr:</b> +44123456789
-              </p>
-            
-              <p>
-                <span class = Psubheader>
-                  <b>Events and projects:</b>
-                </span>
-                  <b>Email:</b> myEmail2@myDomain.com<br><b>Phone nr:</b> +44987654321
-              </p>
-              <h2 class="Pheader2">
-               Join us on social media:
-              </h2>
-              <div id="Pfb-plug">
-                <div class="fb-page" 
-                data-href="https://www.facebook.com/robertgordonuniversity"
-                data-width="380" 
-                data-hide-cover="false"
-                data-show-facepile="false">
-                </div>
-              </div>
-
-              <div id="PsMediaDiv">
-              <a href="https://twitter.com/RobertGordonUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                <img class="PsMediaIcon" src="./Pictures/contact_us/Twitter.jpg" alt = "Twitter"/>
+      <div id="PCdetailsSection"> <!-- The section with contact details and social media links-->
+        <div class="PleftParagraph" id="Pcontactdetails">
+          <h2 class="Pheader2">
+            Our contact details:
+          </h2>
+          <p>
+            <span class = Psubheader>
+              <b>General enquiries:</b>
+            </span>
+              <b>Email:</b> myEmail@myDomain.com<br><b>Phone nr:</b> +44123456789
+          </p>
+          <p>
+            <span class = Psubheader>
+              <b>Events and projects:</b>
+            </span>
+              <b>Email:</b> myEmail2@myDomain.com<br><b>Phone nr:</b> +44987654321
+          </p>
+          <h2 class="Pheader2">
+            Join us on social media:
+          </h2>
+          <div id="Pfb-plug"> <!-- A plug to the Fb website -->
+            <div class="fb-page" 
+              data-href="https://www.facebook.com/robertgordonuniversity"
+              data-width="380" 
+              data-hide-cover="false"
+              data-show-facepile="false">
+            </div>
+          </div>
+          <div id="PsMediaDiv">   <!-- Links to other social media platforms-->
+            <a href="https://twitter.com/RobertGordonUni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <img class="PsMediaIcon" src="./Pictures/contact_us/Twitter.jpg" alt = "Twitter"/>
             </a>
             <a href="https://www.linkedin.com/school/robertgordonuniversity/" target="_blank">
-                <img class="PsMediaIcon" src="./Pictures/contact_us/Linkedin.png" alt = "Linkedin"/>
+              <img class="PsMediaIcon" src="./Pictures/contact_us/Linkedin.png" alt = "Linkedin"/>
             </a>
             <a href="https://www.instagram.com/robertgordonuni/?hl=en" target="_blank">
-                <img class="PsMediaIcon" src="./Pictures/contact_us/Instagram.jpg" alt = "Instagram"/>
+              <img class="PsMediaIcon" src="./Pictures/contact_us/Instagram.jpg" alt = "Instagram"/>
             </a>
           </div>
-
-
-          </div>
-          <div id="PCphonePic">
-            <img src="./Pictures/contact_us/phoneCall.jpg">
-          </div>
         </div>
+        <div id="PCphonePic">
+          <img src="./Pictures/contact_us/phoneCall.jpg">
+        </div>
+      </div>
       <h1 class="Pheader1";> How to find us  </h1>
       <hr class="PmediumHr">
       <div id="PaddressAndMap">
         <div class="PleftParagraph" id="Paddress">
-            <h2 class="Pheader2">
-                Our address:
-            </h2>
-            <p>
-                Garthdee House, Garthdee Rd<br> Aberdeen AB10 7AQ<br> United Kingdom
-                <br>
-            </p>
-            <p>
-                That's the address of our office, however, keep in mind that the events we organise are held at various locations 
-                across Aberdeen and beyond
-            </p>
-            <p>
-                Always check the location on our website or contact us directly before attending
-                </p>
+          <h2 class="Pheader2">
+            Our address:
+          </h2>
+          <p>
+            Garthdee House, Garthdee Rd<br> Aberdeen AB10 7AQ<br> United Kingdom
+          </p>
+          <p>
+            That's the address of our office, however, keep in mind that the events we organise are held at various locations 
+            across Aberdeen and beyond
+          </p>
+          <p>
+            Always check the location on our website or contact us directly before attending
+          </p>
         </div>
-        <div id="PBiggerMap">
-            <iframe id="Pmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8664.533026459734!2d-2.1494315160221023!3d57.11768529334761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert%20Gordon%20University!5e0!3m2!1sen!2spl!4v1605021258682!5m2!1sen!2spl" ></iframe>
+        <div id="PBiggerMap"> <!-- Google Maps plug-in, showing our address-->
+          <iframe id="Pmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8664.533026459734!2d-2.1494315160221023!3d57.11768529334761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d2f0941%3A0x5d8969688e77366a!2sRobert%20Gordon%20University!5e0!3m2!1sen!2spl!4v1605021258682!5m2!1sen!2spl" ></iframe>
         </div>
-     </div>
+      </div>
       <hr class="PinvisibleHr" id="PmainEndHr">
-      </main>
+    </main>
       
-      <footer>
-        <i class="fas fa-angle-up"></i>
-        <div id="divider"></div>
-        <div id="socialMedia">
-           <a href="https://www.facebook.com/" target="_blank">
-              <i class="fab fa-facebook-f"></i>
-           </a>
-           <a href="htstps://www.twitter.com/" target="_blank">
-              <i class="fab fa-twitter"></i>
-           </a>
-           <a href="https://www.linkedin.com/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-           </a>
-           <a href="https://www.instagram.com/" target="_blank">
-              <i class="fab fa-instagram"></i>
-           </a>
-        </div>
-     </footer>
-
- </body>
+    <footer>
+      <i class="fas fa-angle-up"></i>
+      <div id="divider"></div>
+      <div id="socialMedia">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="htstps://www.twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
