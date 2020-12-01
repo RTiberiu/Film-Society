@@ -13,6 +13,27 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="https://kit.fontawesome.com/953d33347a.js" crossorigin="anonymous"></script>
     <script src="JavaScript.js"></script>
+    <script>
+      let eventsEmail = "";
+      let eventsInterested = "";
+      let pmyCheck = document.getElementById("PEcheckbox1").value;
+
+      function submitEventsForm() {
+        eventsEmail = document.getElementById("PeventsFormInput").value;
+      
+      /*  if (pmyCheck.checked) {
+          eventsInterested = "1";
+        } else {
+          eventsInterested = "0";
+        }
+
+        */
+        alert(eventsEmail + "\n" + pmyCheck);
+      
+      }
+
+
+    </script>
 
   </head>
   <body class="Pbody">
@@ -46,11 +67,15 @@
           <h1 class="Pheader1";> Events  </h1> 
           <hr class="PmediumHr">
           <p>
-            Some text<br>
-            Some text Some text<br>
-            Some text Some text Some text<br>
-            Some text Some text Some text Some text Some text Some text<br>
-            Some text Some text Some text<br>
+            Events are a vital part of our community. Without them, there would be no Film Society.<br> We are here for many different reasons and this variety is also reflected in the events we organise:<br>
+            We watch movies, we discuss them, we meet famous people and learn form them, we organise workshops, and finally we put those skills into practice and we create movies.
+          </p>
+          <p>
+            Everyone can choose what area of activity is the most appealing to him.<br>
+            However, despite those differences, there is one thing that is common for all of us and brings us all here,<br> it's the love for good cinematography.
+          </p>
+          <p>
+            Below you will find all the current events we organise and their descriptions
           </p>
 
        </div>
@@ -65,7 +90,20 @@
             </tr>
             <tr>
               <td>
-              <a href="#PEvent1"> Event 1</a>  
+              <a href="#PEvent1"> Film Talks</a>  
+              </td>
+              <td>Our Lounge</td>
+              <td>05.12.2020</td>
+              <td id="PEwindow1"> 
+                <span id="PEinput1">
+                  <input type="checkbox" id="PEcheckbox1" name="checkEvent1"> 
+                  <label for="checkEvent1"> Yes </label>
+                </span>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#PEvent2"> Body language in acting</a> 
               </td>
               <td>Aberdeen Arts Centre</td>
               <td>12.12.2020</td>
@@ -78,20 +116,7 @@
             </tr>
             <tr>
               <td>
-                <a href="#PEvent2"> Event 2</a> 
-              </td>
-              <td>Our Lounge</td>
-              <td>05.12.2020</td>
-              <td id="PEwindow1"> 
-                <span id="PEinput1">
-                  <input type="checkbox" name="checkEvent1"> 
-                  <label for="checkEvent1"> Yes </label>
-                </span>
-                </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="#PEvent3"> Event 3</a> 
+                <a href="#PEvent3"> Film Talks</a> 
               </td>
               <td>Our Lounge</td>
               <td>19.12.2020</td>
@@ -103,9 +128,9 @@
                 </td>
             </tr>
             <tr>
-              <td><a href="#PEvent4"> Event 4</a> </td>
+              <td><a href="#PEvent4"> Meeting Danny Boyle </a> </td>
               <td>The Lemon Tree</td>
-              <td>22.12.2020</td>
+              <td>21.12.2020</td>
               <td id="PEwindow1"> 
                 <span id="PEinput1">
                   <input type="checkbox" name="checkEvent1"> 
@@ -116,6 +141,19 @@
           </table>
       </div>
       <hr class="PinvisibleHr">
+      <div id="PpreEventsForm">
+        <p>
+          Interested in an event?<br> Just tick the box  next to it and enter your e-mail below. You will receive an invitation e-mail with all the details.<br> That includes 5% discount for non-members.
+          You will also be updated on any changes to the event.
+        </p>
+      </div>
+      <div id="PeventsForm">
+        <fieldset>
+          <label id="PeventsFormLabel" for = "PeventsFormInput"> Your e-mail address: </label>
+          <input id="PeventsFormInput" name="email address" type="text">
+        </fieldset>
+        <button id="PeventsSubmit" type="button" onclick="submitEventsForm()">submit</button>
+      </div>
       <div id="PeventsFlex">
           <div id="Pflex1">
             <div id="PEimage1" class="PEflexImages">
@@ -139,15 +177,16 @@
           </div>
           <div id="PEventsP1">
               <h2 class="Pheader2">
-              Some Paragraph
+              What's going on
               </h2>
               <p>
-                  Some text<br>
-                  Some text Some text<br>
-                  Some text Some text Some text<br>
-                  Some text Some text Some text Some text Some text Some text<br>
-                  Some text Some text Some text<br>
+                  Every two weeks we meet at our lounge and discuss film-related things, those meetings are called "Film Talks". Each meeting has its own topic, announced beforehand. Film Talks are free and everyone is welcome to come.
+                  You don't need to let us know in advance, you can just come and take part in the discussion.
               </p>
+              <p>
+                  Many of our events, however, are held outside of our office and mostly require a ticket. You can purchase it through our website.       
+              </p>
+
           </div>
           <div id="Pflex3">
             <div id="PEimage4" class="PEflexImages">
@@ -180,56 +219,75 @@
         <div class="PEvent">
             <h2>
                 <a class="Pheader2" id="PEvent1"> 
-                  Event 1
+                  Film Talks&nbsp;&nbsp;&nbsp;05.12.2020
                 </a>
             </h2>
             <hr class="PEventhr">
             <p>
-                Event description Event description Event description<br>
-                Event description Event description Event descriptionEvent description Event description Event description
-                Event description Event description Event descriptionEvent description Event description Event description
+               "Black and white films - are they still relevant today?"
+               That's the topic of this Film Talks meeting. We are going to discuss black and white movies and whether or not they have any impact on today's audience.
+               Most of us know some good black and white movies that it's not too easy to forget: "Twelve angry men", "La haine", "Sunset Boulevard" to name only a few...
+               Some of the titles that would come into our minds are probably quite old, made still in the pre-colour-film era. However, black and white films are still being produced,
+               some of them winning the top awards in the industry. But are they still relevant?
+            </p>
+            <p>
+              "Film Talks" are held from 4p.m. to 6p.m. in the lounge at our office.<br>
+              To find our office, please visit the "Contact us" page.
             </p>
         </div>
 
         <div class="PEvent">
             <h2>
               <a class="Pheader2" id="PEvent2"> 
-                Event 2
+                Body language in acting
               </a>
             </h2>
             <hr class="PEventhr">
             <p>
-                Event description Event description Event description<br>
-                Event description Event description Event descriptionEvent description Event description Event description
-                Event description Event description Event descriptionEvent description Event description Event description
+              Everyone knows that body language is crucial for being a good actor, but how do you actually learn it?<br>
+              Attending the "Body language in acting" workshops, in which a recognised actor Emil D Marian will share his knowledge and skills, is certainly a good way to start.
+            </p>
+            <p>
+              The workshops are held from 11 a.m. to 4 p.m. with a lunch break at 1 pm. You will be able to buy food and refreshments on-site.
+              The participants will actively practice using body language in relevant contexts and will be supervised by Emil. The number of participants is limited to 50 and the registration for this event may close soon.
+
+
             </p>
         </div>
 
         <div  class="PEvent">
           <h2>
             <a class="Pheader2" id="PEvent3"> 
-              Event 3
+              Film Talks&nbsp;&nbsp;&nbsp;19.12.2020
             </a>
           </h2>
           <hr class="PEventhr">
+          <p> "The Film of the Year 2020"
+              In our last Film Talks meeting in 2020 will pick our Film of the Year, as we do annually.<br>
+              Each participant will propose a title, after which we will have a discussion and vote.<br>
+              Film of the Year 2019: "Pain and Glory"
+          </p>
           <p>
-              Event description Event description Event description<br>
-              Event description Event description Event descriptionEvent description Event description Event description
-              Event description Event description Event descriptionEvent description Event description Event description
+            "Film Talks" are held from 4p.m. to 6p.m. in the lounge at our office.<br>
+            To find our office, please visit the "Contact us" page.
+          </p>
+
           </p>
         </div>
 
         <div class="PEvent">
           <h2>
             <a class="Pheader2" id="PEvent4"> 
-              Event 4
+              Meeting Danny Boyle
             </a>
           </h2>
           <hr class="PEventhr">
           <p>
-              Event description Event description Event description<br>
-              Event description Event description Event descriptionEvent description Event description Event description
-              Event description Event description Event descriptionEvent description Event description Event description
+              This month Danny Boyle, known mainly for directing "Trainspotting" and its sequel "T2 Trainspotting", is coming to Aberdeen and you may have a chance to ask him a question.
+              We will interview Danny on his current and previous projects, including "Trainspotting", but a large part of the event time is planned as audience questions and interaction.
+          </p>
+          <p>
+              The event is held at "The Lemon Tree" in Aberdeen on 21.12.2020 from 6p.m. to 9p.m. There will be a thirty-minute brake at 7:30. Food and drinks available at the bar. 
           </p>
             </div>
 
